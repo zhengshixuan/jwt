@@ -1,0 +1,14 @@
+server:
+  port: 8080
+#  redis 配置
+spring:
+  redis:
+#  redis 地址
+    host: 192.168.0.113
+    port: 6379
+    jedis:
+      pool:
+        max-active: 10
+        max-wait: -1
+        max-idle: 10
+        min-idle: 1
